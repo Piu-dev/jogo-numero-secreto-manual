@@ -2,7 +2,7 @@ function inicioJogo(){
     let titulo = document.querySelector('h1');
     titulo.innerHTML = 'Jogo do número secreto';
     let paragrafo = document.querySelector('p');
-    paragrafo.innerHTML = 'Escolha um número entre 1 e 10';
+    paragrafo.innerHTML = 'Escolha um número entre 1 e 100';
 }
 inicioJogo();
 
@@ -20,7 +20,7 @@ function exibirTextoNaTela(tag,texto){
     responsiveVoice.speak(texto, 'Brazilian Portuguese Female', {rate:1.2});
 }
 exibirTextoNaTela('h1','Jogo do numero secreto');
-exibirTextoNaTela('p', 'Escolha um numero entre 1 e 10');
+exibirTextoNaTela('p', 'Escolha um numero entre 1 e 100');
 
 function verificarChute(){
     let chute = document.querySelector('input').value;
